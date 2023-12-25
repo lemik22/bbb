@@ -39,7 +39,6 @@ $(document).ready(function(){
       {
         breakpoint: 481,
         settings: {
-          dots: false,
           slidesToShow: 1.1,
           slidesToScroll: 1,
         }
@@ -53,13 +52,11 @@ $(document).ready(function(){
     $('body,html').animate({ scrollTop : top }, 600);
   })
 
-  $(document).ready(function () {
-    $('.header__burger-menu').click(function () {
-      $('.header__menu').toggleClass('is-show')
-    })
-    $('.header__menu-cross, .header__menu-item').click(function () {
-      $('.header__menu').removeClass('is-show')
-    })
+  $('.header__burger-menu').click(function () {
+    $('.header__menu').toggleClass('is-show')
+  })
+  $('.header__menu-cross, .header__menu-item').click(function () {
+    $('.header__menu').removeClass('is-show')
   })
 })
 

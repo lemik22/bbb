@@ -598,9 +598,6 @@ a {
       }
     }
   }
-  .progress {
-    display: none;
-  }
   
 }
 /* QUESTIONS ================================= */ 
@@ -1455,25 +1452,19 @@ a {
   .horses {
     padding: 0 0 60px;
   }
-  .horses__slider-nav {
-    gap: 27px;
+  .horses__slider-dots .slick-dots {
+    gap: 0;
   }
-  .progress {
-    display: block;
-    width: 96px;
-    height: 8px;
-    border-radius: 10px;
-    overflow: hidden;
-    
-    background-color: #EAEAEA;
-    background-image: linear-gradient(to right,#FFC700, #FF9900);
-    background-repeat: no-repeat;
-    background-size: 0 100%;
-    
-    transition: background-size 0.4s ease-in-out;
+  .horses__slider-dots .slick-dots button {
+    border-radius: 0;
   }
-  .horses__slider-dots {
-    display: none;
+  .horses__slider-dots li:first-child button {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .horses__slider-dots li:last-child button {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
   .horses__slider {
     margin-bottom: 30px;
